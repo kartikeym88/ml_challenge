@@ -1,0 +1,9 @@
+*.zip
+dataset/
+output/
+__MACOSX/
+student_resource/
+__pycache__/
+*.csv
+*.parquet
+*.pt
