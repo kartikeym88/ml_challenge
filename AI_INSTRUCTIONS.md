@@ -8,6 +8,11 @@ Currently, `eval_train.py` uses a very basic approach:
 
 To reach >0.95 $F_{0.5}$, you need to implement a robust ML pipeline. Follow these steps carefully:
 
+## Step 0: Prerequisites and Dataset
+*   The large dataset is NOT checked into GitHub. 
+*   **Before running code**, ensure your human user has downloaded the dataset zip file from the challenge portal and extracted it into the `dataset/` directory.
+*   You should see `dataset/train/` and `dataset/test/` folders. If they are missing, ask your user to place them there first.
+
 ## Step 1: Improve Blocking (Maximize Recall)
 *   Do NOT use exact name matching for blocking. It misses too many true positives.
 *   **Action**: Implement TF-IDF vectorization with Cosine Similarity (e.g., using `scikit-learn` or `sparse_dot_topn`) on the `business_name` (and potentially `business_address`).
